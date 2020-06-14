@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#landingVideo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.landing-section {
+  margin-top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.landing-section .nav {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.landing-section .nav a {
+  color: #25494b;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18pt;
+}
+
+.landing-section .arrow {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 35px;
+}
+
+.landing-section .main-header {
+  position: absolute;
+  top: 40vh;
+  left: 40px;
+}
+
+.landing-section .main-header h1 {
+  font-size: 90pt;
+  color: white;
+  font-family: "Roboto Slab";
+}
+
+.second-section {
+  margin-top: 300px;
+}
+
+.second-section .content {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 70%;
+}
+
+.second-section .content h4 {
+  color: #4abfe6;
+  font-size: 20pt;
+}
+
+.second-section .content h1 {
+  font-family: "Roboto Slab";
+  font-size: 50pt;
+}
+
+.second-section .content p {
+  line-height: 150%;
+  font-size: 16pt;
+}
+
+.second-section .cards {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  width: 80%;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 50px;
+}
+
+.second-section .cards .card {
+  text-align: center;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.second-section .cards .card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.second-section .cards .card a {
+  background-color: #4abfe6;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.large-section .iframe {
+  margin-top: 40px;
+}
+
+.large-section .content {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 70%;
+}
+
+.large-section .content h4 {
+  color: #4abfe6;
+  font-size: 20pt;
+}
+
+.large-section .content h1 {
+  font-family: "Roboto Slab";
+  font-size: 50pt;
+}
+
+.large-section .content .video video {
+  width: 90%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: white;
+  height: 60px;
+  margin-top: 70px;
+}
+
+.footer .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 170px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .landing-section .nav {
+    width: 60%;
+  }
+  .landing-section .main-header h1 {
+    font-size: 70pt;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .landing-section .nav {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .landing-section .nav {
+    width: 80%;
+  }
+  .landing-section .main-header h1 {
+    font-size: 60pt;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .landing-section .main-header h1 {
+    font-size: 50pt;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .second-section .content,
+  .landing-section .content,
+  .large-section .content {
+    width: 90%;
+  }
+  .second-section .content h4,
+  .landing-section .content h4,
+  .large-section .content h4 {
+    color: #4abfe6;
+    font-size: 20pt;
+  }
+  .second-section .content h1,
+  .landing-section .content h1,
+  .large-section .content h1 {
+    font-family: "Roboto Slab";
+    font-size: 50pt;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100px;
+  }
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    left: 20px;
+  }
+  .landing-section .arrow {
+    top: 110vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
